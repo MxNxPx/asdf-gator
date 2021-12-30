@@ -23,7 +23,7 @@ echo "untarring download $release_file"
 tar -xzf "$release_file" -C "$ASDF_DOWNLOAD_PATH" || fail "Could not extract $release_file"
 
 # debug
-sleep 60 
+sleep 30 
 
 # Remove the tar.gz file since we don't need to keep it
 rm "$release_file"
