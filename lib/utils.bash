@@ -74,15 +74,9 @@ install_version() {
   fi
 
   (
-    # debug
-    copying "$ASDF_DOWNLOAD_PATH/* to $install_path"
-
     mkdir -p "$install_path"
     cp -r "$ASDF_DOWNLOAD_PATH"/* "$install_path"
  
-    # debug
-    sleep 30 
-
     # TODO: Asert gator executable exists.
     local tool_cmd
     tool_cmd="$(echo "$TOOL_TEST" | cut -d' ' -f1)"
